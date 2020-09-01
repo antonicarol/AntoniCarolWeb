@@ -1,0 +1,11 @@
+Firebase firestore Icon =  https://api.iconify.design/vscode-icons:file-type-firestore.svg 
+React Icon = https://api.iconify.design/vscode-icons:file-type-reactts.svg
+firebase Hosting icon = https://api.iconify.design/vscode-icons:file-type-light-firebasehosting.svg
+CSS = https://api.iconify.design/logos:css-3.svg
+HTML = https://api.iconify.design/logos:html-5.svg
+JS = https://api.iconify.design/logos:javascript.svg
+TMDB = https://api.iconify.design/cib:the-movie-database.svg
+mateirial UI = https://api.iconify.design/logos:material-ui.svg
+API = https://api.iconify.design/vscode-icons:file-type-api-extractor.svg
+
+github =https://api.iconify.design/bx:bxl-github.svg?color=gray

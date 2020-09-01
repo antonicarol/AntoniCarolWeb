@@ -1,0 +1,75 @@
+.githubRepo{
+    border: 2px solid rgb(47, 51, 54);
+    border-radius:20px;
+    padding:20px;
+    margin:10px;
+    background-color: #000000;
+    max-width: 30vw;
+    cursor :pointer;
+}
+
+.githubRepo:hover{
+    background-color: rgb(18, 21, 24);
+}
+
+.githubRepo__header{
+    padding:20px;
+}
+
+
+.githubRepo__header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.githubRepo__header > div>img{
+    width: 64px;
+}
+
+.githubRepo__header > div>h3{
+    text-align: center;
+}
+
+
+.githubRepo__header > div> .MuiAvatar-root .MuiAvatar-circle{
+    padding:20px;
+    
+}
+
+.githubRepo__languages > .progress{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.githubRepo__topics{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+.githubRepo > .githubRepo__topics > p{
+    padding:20px;
+    border: 1px solid white;
+}
+.githubRepo__progress__tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.githubRepo__progress__tags >div{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.githubRepo__progress__tags > div > p{
+    padding:10px;
+    margin-top:10px;
+}
+.githubRepo__progress__tags > div > img{
+    width: 40px;
+    
+}

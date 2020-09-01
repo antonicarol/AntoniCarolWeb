@@ -1,0 +1,45 @@
+.home{
+    padding: 20px;
+    color: white;
+    
+}
+
+.home__welcome{
+    display: flex;
+    justify-content: space-between;
+}
+.home__welcome > div{
+    color: #4ecca3;
+}
+
+.home__welcome > div > h3{
+    margin-left:130px;
+    font-size:27px;
+    
+}
+
+.home__welcome > .home__welcomeText{
+    color:white;
+    display:flex;
+    align-items: center;
+    margin-left: 40px;
+    text-align:center;
+}
+
+.home__welcome > .home__welcomeText > h1{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.home__welcome > .home__welcomeText > h4{
+    font-size: 22px;
+}
+
+.home__embed{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home__embed > .p-_bggddd{
+    width: 20px;
+}

@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import PortfolioContextProvider from './contexts/PortfolioContext';
+import 'devicon/devicon-colors.css'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    <PortfolioContextProvider>
+      <App />
+    </PortfolioContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

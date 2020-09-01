@@ -1,0 +1,6 @@
+.projectsWrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+}
