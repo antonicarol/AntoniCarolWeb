@@ -1,30 +1,40 @@
 import React from 'react'
 import './css/Home.css';
-import Embed from 'react-embed';
 
 function Home() {
     return (
         <div className="home">
-            <div className="home__welcome">
-                <div>
-                    <h1>{'<Welcome To  '}</h1>
-                    <h3>{'Productivity />'}</h3>
-                </div>
-
-                <div className="home__welcomeText">
-                    <h1>{'<'}</h1>
-                    <h4> Here's the product of years focused on growing my knwoledge
-                        to become someone in Coding World. Want to see whats the path I'm following
-                        and seek for some tips?<br></br>
-                        You're in the rigt place ; {')'}</h4>
-                    <h1>{' />'}</h1>
-                </div>
-                
+           <div className="home__welcome">
+               <h1>Welcome to my Wesbite</h1>
+               <p>Here you can see who I am, what I do and what my goals are</p>
+           </div>
+           <div className="home__navs">
+            <div className="home__nav">
+                <h1>{'<Porftolio />'}</h1>
+                <p> See what I've done, and what I'm working on actual days</p>
             </div>
-            <div className="home__embed">
-            <Embed isDark url="https://twitter.com/Antonicarol1/status/1300177861572284417" />
            
+           
+            <div className="home__nav">
+                <h1>{'<Roadmap />'} </h1>
+                <p>Follow my steps into achieving my goals</p>
             </div>
+           
+           
+            <div className="home__nav">
+                <h1>{'<Know me />'}</h1>
+                <p>Know more about me, what I love and Social Media's</p>
+            </div>
+           </div>
+           <div className="home__feedback">
+               <h1> Feel free to live me some tips, improvements or support</h1>
+               
+                   <div className="home__feedback__login">
+                       <p>Login to leave me feecback and send it to me</p>
+                       <button>Log in With a Google Account</button>
+                   </div>
+               
+           </div>
         </div>
     )
 }

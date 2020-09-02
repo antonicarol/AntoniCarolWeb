@@ -13,17 +13,23 @@ function App() {
     <div className="app">
       <Router>
        <Header />
+      
           <Switch>
             <Route path='/portfolio'>
+               <img className="background" src="https://i.gyazo.com/5154f3c792b6aaf336ff6b684a282919.png"alt="" />
               <Portfolio />
             </Route>
             <Route path='/roadmap'>
+            <img className="background" src="https://i.gyazo.com/5154f3c792b6aaf336ff6b684a282919.png"alt="" />
               <RoadMap />
             </Route>
             <Route path='/socialMedia'>
+            <img className="background__gif" src="https://i.gyazo.com/c30d772d5a85f61ddf7e7d9e70ee934f.gif"alt="" />
               <SocialMedia />
             </Route>
+            
             <Route path='/'>
+            <img className="background__gif" src="https://i.gyazo.com/c30d772d5a85f61ddf7e7d9e70ee934f.gif"alt="" />
               <Home />
             </Route>
 

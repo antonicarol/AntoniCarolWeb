@@ -3,12 +3,7 @@ import './css/Header.css'
 import logo from '../logo.png';
 import { Link } from 'react-router-dom';
 function Header() {
-    const navs = {
-        portfolio : '<Portfolio />',
-        roadmap : '<RoadMap />',
-        socialMedia : '<Social Media     />',
-        comingSoon : '<Coming soon.. />'
-    }
+
     return (
         <div className="header">
             <div className="header__logo">
@@ -17,17 +12,32 @@ function Header() {
                 </Link>
                
             </div>
+            <div className="header__tools">
+                <p>Built with: React JS and Firebase</p>
+            </div>
             <div className="header__navigation">
                 <div className="header__navs">
+                <div className="header__nav">
+                <img alt="" src="https://api.iconify.design/zondicons:portfolio.svg?color=%234ecca3" />
                     <Link  to='/portfolio'>
-                        <button className="header__nav--active">{navs.portfolio}</button>
-                    </Link>
+                    <button className="header__nav--active">Portfolio</button>
+                    </Link>      
+                    </div>
+                    <div className="header__nav">
+                    <img alt="" src="https://api.iconify.design/raphael:roadmap.svg?color=%234ecca3" />
                     <Link  to='/roadMap'>
-                        <button>{navs.roadmap}</button>
-                    </Link>
+                        <button>RoadMap</button>
+                        </Link>
+                        </div>
+                        <div className="header__nav">
+                        <img alt="" src="https://api.iconify.design/bx:bxs-user-rectangle.svg?color=%234ecca3 " />
                     <Link  to='/socialMedia'>
-                        <button>{navs.socialMedia}</button>
-                    </Link>
+                        
+                        
+                        <button>Know Me</button>
+                        </Link>
+                        </div>
+                   
                     
                     
                     

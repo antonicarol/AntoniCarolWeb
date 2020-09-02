@@ -6,6 +6,9 @@ export const PortfolioContext = createContext();
 const PortfolioContextProvider = (props) => {
 
     const[projects, setProjects] = useState([]);
+    const[detailProject, setDetailproject] = useState(null);
+
+    const handleDetailProject =(project)=> setDetailproject(project);
 
     useEffect(() => {
         db.collection('projects').onSnapshot(snap =>{
@@ -18,7 +21,8 @@ const PortfolioContextProvider = (props) => {
     }, [])
     console.log(projects);
     return (
-        <PortfolioContext.Provider value={{projects}}>
+        <PortfolioContext.Provider value={{projects, detailProject,
+                                        handleDetailProject}}>
             {props.children}
         </PortfolioContext.Provider>
         

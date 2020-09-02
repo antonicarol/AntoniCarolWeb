@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import './css/Project.css'
+import { PortfolioContext } from '../contexts/PortfolioContext'
+
+
+
 function Project({project}) {
+    const{handleDetailProject} = useContext(PortfolioContext);
+
+    const setProject = () =>{
+        handleDetailProject(project);
+    }
+    
     return (
-        <div className="project">
+        <>
+        <div onClick={setProject} className="project">
 
             <div className="project__top">
                 <h3>{project.title}</h3>
@@ -21,8 +32,8 @@ function Project({project}) {
                    return <img key={Math.random(0,9999)} src={tag} alt="" />
                 })}
             </div>
-            
         </div>
+        </>
     )
 }
 

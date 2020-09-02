@@ -8,12 +8,12 @@ function ProjectsWrapper() {
     const{projects} = useContext(PortfolioContext)
     return (
         <div className="projectsWrapper">
-            
+        
            {projects.map(p =>{
                 return <Project key={p.id}
                         project={p.data} />
            })}
-            
+        
         </div>
     )
 }
