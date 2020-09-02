@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './css/Portfolio.css'
 
 import ProjectsWrapper from './ProjectsWrapper'
-import PortfolioContextProvider from '../contexts/PortfolioContext'
+import PortfolioContextProvider from '../../contexts/PortfolioContext'
 import FilterProjects from './FilterProjects'
 import ProjectDetail from './ProjectDetail'
 

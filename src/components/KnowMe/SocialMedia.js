@@ -1,10 +1,7 @@
 import React from 'react'
 import './css/SocialMedia.css'
-import GithubContextProvider from '../contexts/GithubContext'
-import GithubRepo from './GithubRepo'
 import Embed from 'react-embed';
 import InstagramEmbed from 'react-instagram-embed';
-
 
 function SocialMedia() {
     return (

@@ -13,7 +13,16 @@ function Header() {
                
             </div>
             <div className="header__tools">
-                <p>Built with: React JS and Firebase</p>
+                <h4>Built using</h4>
+                <div>
+                    <h4>React JS</h4>
+                    <img alt="" src="https://api.iconify.design/vscode-icons:file-type-reactts.svg" />
+                </div>
+                <div>
+                    <h4>Firebase</h4>
+                    <img alt="" src="https://api.iconify.design/logos:firebase.svg" />
+                </div>
+
             </div>
             <div className="header__navigation">
                 <div className="header__navs">
@@ -31,16 +40,10 @@ function Header() {
                         </div>
                         <div className="header__nav">
                         <img alt="" src="https://api.iconify.design/bx:bxs-user-rectangle.svg?color=%234ecca3 " />
-                    <Link  to='/socialMedia'>
-                        
-                        
-                        <button>Know Me</button>
-                        </Link>
-                        </div>
-                   
-                    
-                    
-                    
+                    <Link  to='/socialmedia'>
+                            <button>Know Me</button>
+                    </Link>
+                </div>  
                 </div>
             </div>
         </div>

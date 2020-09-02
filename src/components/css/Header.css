@@ -12,11 +12,50 @@
 }
 
 .header__logo > a >  img{
+    margin-left:10px;
     width: 260px;
+    transition: transform 200ms ease-in;
+}
+
+.header__logo > a > img:hover{
+    transform: scale(1.2);
+}
+
+.header__tools{
+    display: flex;
+    flex:row;
+    align-items: center;
+    opacity: 0.4;
+}
+
+.header__tools > h4{
+    padding-left:10px;
+    padding-right:10px;
+    font-size: small;  
+}
+
+.header__tools > div{
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.header__tools > div > h4{
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: small;
+}
+
+.header__tools > div > img{
+    padding-left:10px;
+    padding-right: 10px;
+    width: 40px;
 }
 
 .header__navigation{  
     display:flex;
+    
 }
 
 .header__navs{
@@ -43,8 +82,8 @@
     
     font-size:13px;
     cursor:pointer;
-    opacity: 0.7;
-    transition: transform 50ms ease-out;
+    opacity: 0.7; 
+    transition: transform 300ms ease-in;
     color: #eeeeee;
     border:none;
     font-size: large;

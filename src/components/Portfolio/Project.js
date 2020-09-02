@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import './css/Project.css'
-import { PortfolioContext } from '../contexts/PortfolioContext'
+import { PortfolioContext } from '../../contexts/PortfolioContext'
 
 
 

@@ -28,3 +28,7 @@ portfiolio : https://api.iconify.design/zondicons:portfolio.svg?color=%234ecca3
 roadMap : https://api.iconify.design/raphael:roadmap.svg?color=%234ecca3
 
 user: https://api.iconify.design/bx:bxs-user-rectangle.svg?color=%234ecca3 
+
+firebase : https://api.iconify.design/logos:firebase.svg
+
+background: https://api.iconify.design/flat-color-icons:google.svg

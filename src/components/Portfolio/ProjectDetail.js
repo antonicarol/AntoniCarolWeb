@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './css/ProjectDetail.css'
-import { PortfolioContext } from '../contexts/PortfolioContext'
+import { PortfolioContext } from '../../contexts/PortfolioContext'
 function ProjectDetail() {
     const{detailProject} = useContext(PortfolioContext);
 
