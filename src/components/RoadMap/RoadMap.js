@@ -1,23 +1,16 @@
 import React from 'react'
 import './css/RoadMap.css'
-import RoadMapGraph from './RoadMapGraph'
-import RoadMapGoals from './RoadMapGoals'
+import RoadMapSummary from './RoadMapSummary'
+import ProgressFrontend from './ProgressFrontend'
+import ProgressBackend from './ProgressBackend'
+
 function RoadMap() {
     return (
         <div className="roadMap">
-            <div className="roadMap__info">
-                <h1> {`<RoadMap /> `}</h1>
-                <p> Just wanted to have all the path I follow to achieve my goals.</p>
-            </div>
-
-            <div className="roadMap__body">
-
-                <div className="roadMap__center">
-                    <RoadMapGraph />
-                </div>
-                <div className="roadMap__right">
-                    <RoadMapGoals />
-                </div>
+            <RoadMapSummary />
+            <div className="roadMap__progress">
+                <ProgressFrontend />
+                <ProgressBackend />
             </div>
         </div>
     )

@@ -32,3 +32,7 @@ user: https://api.iconify.design/bx:bxs-user-rectangle.svg?color=%234ecca3
 firebase : https://api.iconify.design/logos:firebase.svg
 
 background: https://api.iconify.design/flat-color-icons:google.svg
+
+SQL: https://api.iconify.design/ant-design:console-sql-outlined.svg?color=blue
+
+no SQL : https://api.iconify.design/whh:nosql.svg?color=red

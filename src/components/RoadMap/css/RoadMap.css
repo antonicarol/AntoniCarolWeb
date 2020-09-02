@@ -1,39 +1,11 @@
 .roadMap{
     padding:20px;
     color: white;
-}
-
-.roadMap__info{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    
 }
-
-.roadMap__info > p{
-    font-size: x-large;
-    padding: 23px;
-}
-
-.roadMap__body{
+.roadMap__progress{
     display: flex;
-    flex-direction: row;
-    height :100vh;
-    justify-content: space-between;
-}
-
-
-.roadMap__center{
-    flex:1;
-    border: 1px solid #4ecca3;
-    width: 100%;
-    margin:10px;
-   
-    justify-content: center;
- 
-}
-.roadMap__right{
-    border: 1px solid #4ecca3;
-    height: auto;
-    width: 40vw;
-    padding:30px;
-    margin: 20px;
+    justify-content: space-evenly;
 }

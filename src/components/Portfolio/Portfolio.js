@@ -1,14 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './css/Portfolio.css'
 
 import ProjectsWrapper from './ProjectsWrapper'
-import PortfolioContextProvider from '../../contexts/PortfolioContext'
+import PortfolioContextProvider, { PortfolioContext } from '../../contexts/PortfolioContext'
 import FilterProjects from './FilterProjects'
 import ProjectDetail from './ProjectDetail'
 
 
-function Portfolio() {
 
+
+function Portfolio() {
+    const{detailProject} = useContext(PortfolioContext);
+    
     return (
         <div className="portfolio">
             <PortfolioContextProvider>
@@ -18,7 +21,9 @@ function Portfolio() {
             <div className="portfolio__body">
             <ProjectsWrapper />
             <div className="portfolio__detail">
+                
                 <ProjectDetail project={ {} } />
+                
             </div>
             </div>
             

@@ -1,18 +1,26 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './css/ProjectDetail.css'
 import { PortfolioContext } from '../../contexts/PortfolioContext'
+
+
 function ProjectDetail() {
     const{detailProject} = useContext(PortfolioContext);
 
-    console.log(detailProject?.tags);
+
     return (
+        <>
+        
         <div className="projectDetail">
+       
            {detailProject ? (
+               
+               
             <> 
              <div className="projectDetail__top">
                  <h1>{detailProject.title}</h1>
                  
              </div>
+           
              <div className="projectDetail__body">
                  <div className="projectDetail__body__top">
                     <img src={detailProject.posterUrl} alt="" />
@@ -33,6 +41,7 @@ function ProjectDetail() {
                  </div>
                  
              </div> 
+         
              <div className="projectDetail__bottom">
              
                 {detailProject.tags.map(tag=>{
@@ -40,7 +49,9 @@ function ProjectDetail() {
                 })}
             
             </div> 
+            
             </>
+          
            ) : (
                <div className="projectDetail__noneSelected">
                    <h1>Click on a project card to see details!</h1>
@@ -48,6 +59,7 @@ function ProjectDetail() {
            )
          }
         </div>
+        </>
     )
 }
 

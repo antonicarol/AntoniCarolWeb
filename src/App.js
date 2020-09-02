@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import RoadMap from './components/RoadMap/RoadMap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SocialMedia from './components/KnowMe/SocialMedia';
+import PortfolioContextProvider from './contexts/PortfolioContext';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
           <Switch>
             <Route path='/portfolio'>
                <img className="background" src="https://i.gyazo.com/5154f3c792b6aaf336ff6b684a282919.png" alt="" />
-              <Portfolio />
+               <PortfolioContextProvider>
+                  <Portfolio />
+              </PortfolioContextProvider>
             </Route>
             <Route path='/roadmap'>
             <img className="background" src="https://i.gyazo.com/5154f3c792b6aaf336ff6b684a282919.png" alt="" />
