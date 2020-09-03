@@ -1,41 +1,35 @@
-import React, { useContext, useState } from 'react'
-import './css/Project.css'
-import { PortfolioContext } from '../../contexts/PortfolioContext'
+import React, { useContext, useState } from "react";
+import "./css/Project.css";
+import { useStateValue } from "../../contexts/StateProvider";
+import { actionTypes } from "../../contexts/reducer";
 
+function Project({ project }) {
+  const [state, dispatch] = useStateValue();
 
+  const setProject = () => {
+    dispatch({
+      type: actionTypes.SET_DETAIL_PROJECT,
+      detailProject: project,
+    });
+  };
 
-function Project({project}) {
-    const{handleDetailProject} = useContext(PortfolioContext);
-
-    const setProject = () =>{
-        handleDetailProject(project);
-    }
-    
-    return (
-        <>
-        <div onClick={setProject} className="project">
-
-            <div className="project__top">
-                <h3>{project.title}</h3>
-            </div>
-            <div className="project__center">
-                <img src={project.posterUrl} alt="" />
-                {project.mainTool &&
-                <div className="project__mainTool">
-                    <img src ={project.mainTool} alt=""></img>
-                </div>}
-            </div>
-            
-
-            <div className="project__bottom">
-                {project.tags.map(tag=>{
-                   return <img key={Math.random(0,9999)} src={tag} alt="" />
-                })}
-            </div>
+  return (
+    <>
+      <div onClick={setProject} className="project">
+        <div className="project__top">
+          <h3>{project.title}</h3>
         </div>
-        </>
-    )
+        <div className="project__center">
+          <img src={project.posterUrl} alt="" />
+          {project.mainTool && (
+            <div className="project__mainTool">
+              <img src={project.mainTool} alt=""></img>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
+  );
 }
 
-
-export default Project
+export default Project;

@@ -1,21 +1,27 @@
-.portfolio{
-    color: #eeeeee;
+.portfolio {
+  color: #eeeeee;
 }
 
-.portfolio__summary{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:10px;
-    padding:4px 20px;
+.portfolio__summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 4px 20px;
 }
 
-.portfolio__body{
-    display: flex;
-    justify-content: space-between;
+.portfolio__body {
+  display: flex;
+  justify-content: space-between;
 }
 
-.portfolio__detail{
-    width: 40vw;
+.portfolio__detail {
+  width: 40vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio__detail {
+    display: none;
+  }
 }

@@ -1,92 +1,85 @@
-.socialMedia{
-    display: flex;
-    justify-content: space-evenly;
-    color: #4ecca3;
-   
+.socialMedia {
+  display: flex;
+  justify-content: space-evenly;
+  color: #4ecca3;
 }
 
-.socialMedia__hobbies{
-    width: 50%;
-    border: 1px solid #4ecca3;
-    background-color:rgba(0,0,0,0.8);
+.socialMedia__hobbies {
+  width: 50%;
+  border: 1px solid #4ecca3;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.socialMedia__social{
-    display : flex;
-    padding:10px;
-    width: 500px;
-    flex-direction: column;
-    align-items: center;
-    border : 1px solid #4ecca3;
-    background-color:rgba(0,0,0,0.8);
+.socialMedia__social {
+  display: flex;
+  padding: 10px;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #4ecca3;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.socialMedia__social > h2{
-    letter-spacing: 5px;
+.socialMedia__social > h2 {
+  letter-spacing: 5px;
 }
 
-
-
-.socialMedia__social > div{
-    padding:5px !important;
+.socialMedia__social > div {
+  padding: 5px !important;
 }
 
-
-.socialMedia__social > div > iframe{
-    height: 420px !important;
-    background: black !important;
-    width : 400px !important;
-    min-width: 300px !important;
+.socialMedia__social > div > iframe {
+  height: 420px !important;
+  background: black !important;
+  width: 400px !important;
+  min-width: 300px !important;
 }
 
-.socialMedia__hobbies{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.socialMedia__hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.socialMedia__hobbie{
-    display: flex;
-    flex-direction: column;
-    margin-bottom:10px;
-}
-
-.socialMedia__hobbie__title{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top:10px;
+.socialMedia__hobbie {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.socialMedia__hobbie__title > h2{
-    font-size: 40px;
-    font-weight: 900;
-    
+.socialMedia__hobbie__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.socialMedia__hobbie__title > img{
-    width: 64px;
-    padding:10px;
-    margin-left: 20px;
-    margin-right: 20px;
+.socialMedia__hobbie__title > h2 {
+  font-size: 40px;
+  font-weight: 900;
 }
 
-.socialMedia__hobbie__body{
-    padding:5px 10px;
-    margin-right:20px;
-    display: flex;
-    justify-content: space-evenly;
+.socialMedia__hobbie__title > img {
+  width: 64px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.socialMedia__hobbie__body > p{ 
-    text-align: center;
-    padding:20px;
-    margin-right:20px;
-   
+.socialMedia__hobbie__body {
+  padding: 5px 10px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.socialMedia__hobbie__content{
-    width: 100%;
-    border: 1px solid #4ecca3;
+.socialMedia__hobbie__body > p {
+  text-align: center;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.socialMedia__hobbie__content {
+  width: 100%;
+  border: 1px solid #4ecca3;
 }

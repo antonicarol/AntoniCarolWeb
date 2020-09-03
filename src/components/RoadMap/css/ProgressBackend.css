@@ -1,41 +1,41 @@
-.progressBackend{
-    height: 50vh;
-    border: 1px solid #4ecca3;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0,0,0,0.8);
+.progressBackend {
+  height: 50vh;
+  border: 1px solid #4ecca3;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.progressBackend__body{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+.progressBackend__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.progressBackend__body__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:20px;
-    cursor: pointer;
-    transition: transform 400ms ease-in-out;
+.progressBackend__body__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 400ms ease-in-out;
 }
 
-.progressBackend__body__item:hover{
-    transform: scaleY(1.2);
+.progressBackend__body__item:hover {
+  transform: scaleY(1.2);
 }
-.progressBackend__body__item > img{
-   width: 110px;
-   height: 100px;
-}
-
-.progressBackend__body__item > svg{
-    padding-top:20px;
+.progressBackend__body__item > img {
+  width: 110px;
+  height: 100px;
 }
 
-.progressBackend__body__item >h4{
-    padding:10px;
+.progressBackend__body__item > svg {
+  padding-top: 20px;
+}
+
+.progressBackend__body__item > h4 {
+  padding: 10px;
 }

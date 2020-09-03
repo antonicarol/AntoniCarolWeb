@@ -1,11 +1,10 @@
-.roadMap{
-    padding:20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    
+.roadMap {
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
-.roadMap__progress{
-    display: flex;
-    justify-content: space-evenly;
+.roadMap__progress {
+  display: flex;
+  justify-content: space-evenly;
 }
