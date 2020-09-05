@@ -23,7 +23,7 @@ function Project({ project }) {
           <img src={project.posterUrl} alt="" />
           {project.mainTool && (
             <div className="project__mainTool">
-              <img src={project.mainTool} alt=""></img>
+              <img src={project.mainTool[0]} alt=""></img>
             </div>
           )}
         </div>

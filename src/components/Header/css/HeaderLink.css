@@ -1,0 +1,48 @@
+.headerLink {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.headerLink > img {
+  padding: 3px;
+  object-fit: contain;
+  width: 40px;
+}
+.headerLink > a {
+  position: relative;
+  padding: 5px 10px;
+}
+
+.headerLink > a > button {
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: transform 300ms ease-out;
+  color: #eeeeee;
+  border: none;
+  font-size: large;
+}
+
+.headerLink > a > .headerLink__comingSoon {
+  position: absolute;
+  transform: rotate(-45deg);
+  right: 20px;
+  bottom: 3px;
+  width: 45px;
+}
+
+.headerLink:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .headeLink > img {
+    width: 20px;
+  }
+  .headerLink > a > button {
+    font-size: 14px;
+  }
+}

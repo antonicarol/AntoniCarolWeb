@@ -1,5 +1,19 @@
 .projectsWrapper {
   display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.projectsWrapper__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #4ecca3;
+}
+
+.projectsWrapper__body {
+  padding: 10px 20px;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }

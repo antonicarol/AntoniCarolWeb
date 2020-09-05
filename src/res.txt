@@ -12,7 +12,7 @@ github =https://api.iconify.design/bx:bxl-github.svg?color=gray
 
 django: https://api.iconify.design/logos:django.svg
 
-.NET : https://api.iconify.design/cib:dot-net.svg?color=%23FF00FF
+. NET = https://api.iconify.design/mdi:dot-net.svg?color=%23FF00FF
 
 web cion : https://api.iconify.design/mdi:web.svg?color=%234ecca3
 
@@ -36,3 +36,6 @@ background: https://api.iconify.design/flat-color-icons:google.svg
 SQL: https://api.iconify.design/ant-design:console-sql-outlined.svg?color=blue
 
 no SQL : https://api.iconify.design/whh:nosql.svg?color=red
+
+coming soon : https://api.iconify.design/emojione-monotone:soon-arrow.svg?color=red
+

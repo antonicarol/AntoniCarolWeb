@@ -9,8 +9,7 @@ import db from "../../firebase/firebase";
 import { actionTypes } from "../../contexts/reducer";
 
 function Portfolio() {
-  const [tempProj, setTempProj] = useState([]);
-  const [state, dispatch] = useStateValue();
+  const [{ projects }, dispatch] = useStateValue();
 
   useEffect(() => {
     db.collection("projects").onSnapshot((snap) => {
@@ -32,9 +31,6 @@ function Portfolio() {
       </div>
       <div className="portfolio__body">
         <ProjectsWrapper />
-        <div className="portfolio__detail">
-          <ProjectDetail project={{}} />
-        </div>
       </div>
 
       {/** WELL HAVE THE PROJECTS SHOWED */}

@@ -1,26 +1,24 @@
 import React from "react";
 import "./css/FilterProjects.css";
+
+import FolderItem from "../Shared/FolderItem";
+import { useStateValue } from "../../contexts/StateProvider";
 function FilterProjects() {
+  const [{ selectedFolder }, dispatch] = useStateValue();
+
   return (
     <div className="filterProject">
-      <div className="filterProject__item">
-        <img
-          src="https://api.iconify.design/vscode-icons:file-type-reactts.svg"
-          alt=""
-        />
-        <p>React Js</p>
-      </div>
-      <div className="filterProject__item">
-        <img src="https://api.iconify.design/logos:django.svg" alt="" />
-        <p>Django</p>
-      </div>
-      <div className="filterProject__item">
-        <img
-          src="https://api.iconify.design/cib:dot-net.svg?color=%23FF00FF    "
-          alt=""
-        />
-        <p>Microsoft .NET</p>
-      </div>
+      <FolderItem
+        open={selectedFolder?.label === "React"}
+        label="React"
+        icon="https://api.iconify.design/vscode-icons:file-type-reactts.svg"
+      />
+
+      <FolderItem
+        open={selectedFolder?.label == ".NET"}
+        label=".NET"
+        icon="https://api.iconify.design/mdi:dot-net.svg?color=%23FF00FF"
+      />
     </div>
   );
 }

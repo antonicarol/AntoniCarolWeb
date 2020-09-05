@@ -1,0 +1,31 @@
+.header {
+  color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 4px double #4ecca3;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 100vw;
+}
+.header__logo {
+  flex: 0.3;
+}
+
+.header__logo > a > img {
+  margin-left: 10px;
+  width: 260px;
+  transition: transform 200ms ease-in;
+}
+
+.header__logo > a > img:hover {
+  transform: scale(1.2);
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+}
