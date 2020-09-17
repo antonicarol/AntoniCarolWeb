@@ -7,9 +7,13 @@ import ProjectDetail from "./ProjectDetail";
 import { useStateValue } from "../../contexts/StateProvider";
 import db from "../../firebase/firebase";
 import { actionTypes } from "../../contexts/reducer";
+import { Message } from "semantic-ui-react";
 
 function Portfolio() {
-  const [{ projects }, dispatch] = useStateValue();
+  const [
+    { projects, filteredProjects, selectedFramework },
+    dispatch,
+  ] = useStateValue();
 
   useEffect(() => {
     db.collection("projects").onSnapshot((snap) => {
@@ -26,13 +30,16 @@ function Portfolio() {
 
   return (
     <div className="portfolio">
-      <div className="portfolio__summary">
+      <div className="portfolio__Filters">
         <FilterProjects />
       </div>
       <div className="portfolio__body">
-        <ProjectsWrapper />
+        {selectedFramework ? (
+          <ProjectsWrapper />
+        ) : (
+          <h1>Select from the folder structure the filter!</h1>
+        )}
       </div>
-
       {/** WELL HAVE THE PROJECTS SHOWED */}
     </div>
   );

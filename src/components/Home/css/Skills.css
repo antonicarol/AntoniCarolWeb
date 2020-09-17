@@ -1,0 +1,53 @@
+.skills {
+  color: white;
+}
+
+.skills > center > button {
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.skills__content {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 5px;
+}
+
+.skills__basic,
+.skills__web,
+.skills__db {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+.skills__basic__title,
+.skills__web__title,
+.skills__db__title {
+  text-align: center;
+}
+
+.skills__basic__item,
+.skills__web__item,
+.skills__db__item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.skills__basic__item > p,
+.skills__web__item > p,
+.skills__db__item > p {
+  margin: 0px 5px;
+  flex: 0.3;
+}
+
+.skills__basic__item > progress,
+.skills__web__item > progress,
+.skills__db__item > progress {
+  height: 30px;
+  background-color: blue;
+  flex: 1;
+}

@@ -5,16 +5,23 @@ import FolderOpenIcon from "@material-ui/icons/FolderOpen";
 import { useStateValue } from "../../contexts/StateProvider";
 import { actionTypes } from "../../contexts/reducer";
 
-function FolderItem({ icon, label, open }) {
+function FolderItem({ icon, label, open, platform, framework }) {
   const [{ projects }, dispatch] = useStateValue();
   console.log(projects);
   const handleClick = () => {
-    dispatch({
-      type: actionTypes.SET_PORTFOLIO_FOLDER,
-      folder: { icon, label },
-      filter: label,
-      allProjects: projects,
-    });
+    if (platform) {
+      dispatch({
+        type: actionTypes.SET_PORTFOLIO_FOLDER,
+        folder: { icon, label },
+      });
+    } else {
+      dispatch({
+        type: actionTypes.SET_PORTFOLIO_FRAMEWORK,
+        framework: { icon, label },
+        filter: label,
+        allProjects: projects,
+      });
+    }
   };
   return (
     <div onClick={handleClick} className="folderItem">

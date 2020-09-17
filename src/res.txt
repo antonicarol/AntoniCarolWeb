@@ -39,3 +39,18 @@ no SQL : https://api.iconify.design/whh:nosql.svg?color=red
 
 coming soon : https://api.iconify.design/emojione-monotone:soon-arrow.svg?color=red
 
+wqebicon: https://api.iconify.design/whh:html.svg?color=%234ecca3
+
+anmdroind https://api.iconify.design/flat-color-icons:android-os.svg
+
+react NAtive : https://api.iconify.design/vscode-icons:file-type-reactts.svg
+
+java : https://api.iconify.design/logos:java.svg
+
+background: background: https://api.iconify.design/map:university.svg?color=%234ecca3
+
+node : https://api.iconify.design/vscode-icons:file-type-node.svg
+
+MongoDB : https://api.iconify.design/teenyicons:mongodb-solid.svg?color=%23589636
+
+Express : https://api.iconify.design/logos:express.svg?color=%234ecca3

@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "devicon/devicon-colors.css";
 import { StateProvider } from "./contexts/StateProvider";
 import reducer, { initialState } from "./contexts/reducer";
+import "semantic-ui-css/semantic.min.css";
 
 ReactDOM.render(
   <React.StrictMode>

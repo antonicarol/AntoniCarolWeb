@@ -4,6 +4,7 @@ export const initialState = {
   filteredProjects: [],
   detailProject: null,
   selectedFolder: null,
+  selectedFramework: null,
 };
 
 export const actionTypes = {
@@ -11,6 +12,7 @@ export const actionTypes = {
   SET_PROJECTS: "SET_PROJECTS",
   SET_DETAIL_PROJECT: "SET_DETAIL_PROJECT",
   SET_PORTFOLIO_FOLDER: "SET_PORTFOLIO_FOLDER",
+  SET_PORTFOLIO_FRAMEWORK: "SET_PORTFOLIO_FRAMEWORK",
   FILTER_PROJECTS: "FILTER_PROJECTS",
 };
 
@@ -39,6 +41,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         selectedFolder: action.folder,
+      };
+
+    case actionTypes.SET_PORTFOLIO_FRAMEWORK:
+      return {
+        ...state,
+        selectedFramework: action.framework,
         filteredProjects: action.allProjects.filter(
           (p) => p.data.mainTool[1] === action.filter
         ),

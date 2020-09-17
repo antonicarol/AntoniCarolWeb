@@ -1,0 +1,62 @@
+.resume {
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.resume__education,
+.resume__work {
+  width: 50%;
+}
+
+.resume__education__content,
+.resume__work__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.resume__educationItem,
+.resume__workItem {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 60px;
+}
+
+.resume__educationItem__title,
+.resume__workItem__title {
+  display: flex;
+}
+
+.resume__educationItem__title > p,
+.resume__workItem__title > p {
+  margin-left: 20px;
+}
+
+.resume__educationItem > span,
+.resume__workItem > span {
+  margin-left: 40px;
+  color: gray;
+}
+
+.resume__educationItem > p,
+.resume__workItem > p {
+  margin-left: 60px;
+  color: lightgray;
+}
+
+@media only screen and (max-width: 900px) {
+  .resume {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .resume__education,
+  .resume__work {
+    width: auto;
+  }
+  .resume::-webkit-scrollbar {
+    display: none;
+  }
+}

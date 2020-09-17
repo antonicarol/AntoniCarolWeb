@@ -1,14 +1,80 @@
+@font-face {
+  font-family: "Grandstander";
+  src: url("https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap");
+}
+
 .app {
   width: auto;
   background-image: linear-gradient(to right, #1b1e23, #232931);
-  height: auto;
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.app__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.app__fakeHeader {
+  height: 30%;
+}
+
+.app__navs {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  z-index: 200;
+  width: 10%;
+  border-right: 1px solid lightgray;
+}
+.app__navs > a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.app__navs > a:hover {
+  color: white !important;
+  opacity: 1;
+}
+
+.app__body {
+  flex: 1;
+}
+
+.custom-shape-divider-top-1600329473 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1600329473 svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 153px;
+}
+
+.custom-shape-divider-top-1600329473 .shape-fill {
+  fill: #fff8f8;
+}
+
+.app__background {
+  z-index: -2;
 }
 
 .background {
   width: 100%;
   object-fit: contain;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
-  margin-top: -475px;
+  margin-top: -550px;
   margin-bottom: -400px;
   z-index: -999;
   user-select: none;
@@ -17,17 +83,29 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-.background__gif {
-  z-index: -999;
-  width: 100%;
-  object-fit: contain;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-  margin-top: -400px;
-  margin-bottom: -500px;
 
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+@media only screen and (max-width: 900px) {
+  .app__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .app__navs {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border-bottom: 1px solid lightgray;
+    border-right: none;
+    height: 10vh;
+    top: 20%;
+    width: auto;
+  }
+  .app {
+    height: 120vh;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .app::-webkit-scrollbar {
+    display: none;
+  }
 }
