@@ -5,13 +5,22 @@ import { useStateValue } from "../contexts/StateProvider";
 import { actionTypes } from "../contexts/reducer";
 import ProjectCard from "../components/ProjectCard";
 import projList from "../contexts/projects";
+import { useLocation } from "react-router-dom";
 function Projects() {
-  const [{ projects }, dispatch] = useStateValue();
+  const [{ projects, path }, dispatch] = useStateValue();
+  const location = useLocation();
 
   useEffect(() => {
     dispatch({
       type: actionTypes.SET_PROJECTS,
       projects: projList,
+    });
+  }, []);
+
+  useEffect(() => {
+    dispatch({
+      type: actionTypes.SET_LOCATION,
+      location: location.pathname,
     });
   }, []);
 

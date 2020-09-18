@@ -21,6 +21,10 @@
   opacity: 1;
 }
 
+.link--active {
+  color: red !important;
+}
+
 @media only screen and (max-width: 900px) {
   .navbar {
     display: flex;

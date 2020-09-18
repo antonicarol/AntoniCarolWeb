@@ -7,8 +7,20 @@ import instagramIcon from "@iconify/icons-entypo-social/instagram";
 import bxlGithub from "@iconify/icons-bx/bxl-github";
 import { motion } from "framer-motion";
 import { pageAppearFromRight } from "../animations/variants";
+import { useStateValue } from "../contexts/StateProvider";
+import { useLocation } from "react-router-dom";
+import { actionTypes } from "../contexts/reducer";
+import { useEffect } from "react";
 
 function Home() {
+  const [{ path }, dispatch] = useStateValue();
+  const location = useLocation();
+  useEffect(() => {
+    dispatch({
+      type: actionTypes.SET_LOCATION,
+      location: location.pathname,
+    });
+  }, []);
   return (
     <motion.div
       variants={pageAppearFromRight}
