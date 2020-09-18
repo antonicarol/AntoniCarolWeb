@@ -1,0 +1,8 @@
+.contactItem {
+  display: flex;
+  margin-top: 10px;
+  color: #968b8b;
+}
+.contactItem > p {
+  margin-left: 20px;
+}

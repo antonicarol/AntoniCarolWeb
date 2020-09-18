@@ -4,27 +4,16 @@ import { motion } from "framer-motion";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 import ResumeItem from "../components/ResumeItem";
+import { pageAppearFromRight } from "../animations/variants";
 
-const variantVariants = {
-  hidden: {
-    x: -1500,
-  },
-  visible: {
-    x: 50,
-    transition: {
-      type: "tween",
-      delay: 0.6,
-      duration: 0.6,
-    },
-  },
-};
 function Resume() {
   return (
     <motion.div
-      variants={variantVariants}
+      variants={pageAppearFromRight}
       initial="hidden"
       animate="visible"
       className="resume"
+      exit="exit"
     >
       <div className="resume__education">
         <h1>Education</h1>

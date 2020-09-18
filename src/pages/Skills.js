@@ -1,33 +1,12 @@
 import React from "react";
 import "./css/Skills.css";
 import { motion } from "framer-motion";
-
-const variantVariants = {
-  hidden: {
-    x: -1500,
-  },
-  visible: {
-    x: 0,
-    transition: {
-      type: "tween",
-      delay: 0.6,
-      duration: 0.6,
-    },
-  },
-  exit: {
-    x: 1500,
-    transition: {
-      type: "tween",
-      delay: 0.6,
-      duration: 0.6,
-    },
-  },
-};
+import { pageAppearFromRight } from "../animations/variants";
 function Skills() {
   return (
     <motion.div
       key="skills"
-      variants={variantVariants}
+      variants={pageAppearFromRight}
       initial="hidden"
       animate="visible"
       exit="exit"

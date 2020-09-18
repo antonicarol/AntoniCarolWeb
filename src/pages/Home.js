@@ -6,35 +6,15 @@ import linkedinIcon from "@iconify/icons-entypo-social/linkedin";
 import instagramIcon from "@iconify/icons-entypo-social/instagram";
 import bxlGithub from "@iconify/icons-bx/bxl-github";
 import { motion } from "framer-motion";
+import { pageAppearFromRight } from "../animations/variants";
 
-const variantVariants = {
-  hidden: {
-    y: -1200,
-  },
-  visible: {
-    y: 0,
-    transition: {
-      type: "spring",
-      delay: 0.6,
-      duration: 1,
-    },
-    end: {
-      y: 1200,
-      transition: {
-        type: "spring",
-        delay: 0.6,
-        duration: 1,
-      },
-    },
-  },
-};
 function Home() {
   return (
     <motion.div
-      variants={variantVariants}
+      variants={pageAppearFromRight}
       initial="hidden"
       animate="visible"
-      onTransitionEnd="end"
+      exit="exit"
       className="home"
     >
       <div className="home__info">

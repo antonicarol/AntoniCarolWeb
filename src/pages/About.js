@@ -8,29 +8,19 @@ import HouseIcon from "@material-ui/icons/House";
 import PhoneIcon from "@material-ui/icons/Phone";
 import Embed from "react-embed";
 import { useHistory } from "react-router-dom";
+import { pageAppearFromRight } from "../animations/variants";
+import ContactItem from "../components/ContactItem";
 
-const variantVariants = {
-  hidden: {
-    x: -1000,
-  },
-  visible: {
-    x: 50,
-    transition: {
-      type: "tween",
-      delay: 0.6,
-      duration: 0.6,
-    },
-  },
-};
 function About() {
   const history = useHistory();
   console.log(history);
   return (
     <motion.div
       className="about"
-      variants={variantVariants}
+      variants={pageAppearFromRight}
       initial="hidden"
       animate="visible"
+      exit="exit"
     >
       <div className="about__left">
         <Avatar className="about__avatar" />
@@ -47,29 +37,14 @@ function About() {
           realised that I love Backend!
         </p>
         <div className="about__contact">
-          <div className="about__contact__item">
-            <MailIcon />
-            <p>tonicarolmateo@gmail.com</p>
-          </div>
-          <div className="about__contact__item">
-            <LocationCityIcon />
-            <p>Spain - Barcelona</p>
-          </div>
-          <div className="about__contact__item">
-            <HouseIcon />
-            <p>Igualada-O8700 --- C/El Bruc, 51 </p>
-          </div>
-          <div className="about__contact__item">
-            <PhoneIcon />
-            <p>620 35 56 72 </p>
-          </div>
+          <ContactItem title="tonicarolmateo@gmail.com" Icon={MailIcon} />
+          <ContactItem title="Spain - Barcelona" Icon={LocationCityIcon} />
+          <ContactItem
+            title="Igualada-O8700 --- C/El Bruc, 51"
+            Icon={HouseIcon}
+          />
+          <ContactItem title="620 35 56 72 " Icon={PhoneIcon} />
         </div>
-      </div>
-      <div className="about__right">
-        <Embed
-          isDark
-          url="https://twitter.com/Antonicarol1/status/1300177861572284417"
-        />
       </div>
     </motion.div>
   );

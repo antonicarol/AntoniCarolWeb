@@ -1,10 +1,11 @@
 .resume {
-  width: 85vw;
-  padding: 20px;
+  width: 100%;
+  padding: 0px 15px;
   color: white;
   display: flex;
   justify-content: center;
   font-family: "Grandstander";
+  height: 150vh;
 }
 
 .resume__education,
@@ -29,13 +30,9 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    overflow-y: scroll;
   }
   .resume__education,
   .resume__work {
     width: auto;
-  }
-  .resume::-webkit-scrollbar {
-    display: none;
   }
 }

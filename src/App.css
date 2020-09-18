@@ -9,6 +9,7 @@
   height: 100vh;
   position: relative;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .app__content {
@@ -20,36 +21,11 @@
   height: 30%;
 }
 
-
 .app__body {
   flex: 1;
 }
 
-.custom-shape-divider-top-1600329473 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1600329473 svg {
-  position: relative;
-  display: block;
-  width: calc(156% + 1.3px);
-  height: 153px;
-}
-
-.custom-shape-divider-top-1600329473 .shape-fill {
-  fill: #fff8f8;
-}
-
-.app__background {
-  z-index: -2;
-}
-
-.background {
+.backgroundColors {
   width: 100%;
   object-fit: contain;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
@@ -70,7 +46,6 @@
     align-items: center;
   }
   .app {
-    height: 120vh;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
