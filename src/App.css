@@ -20,27 +20,6 @@
   height: 30%;
 }
 
-.app__navs {
-  display: flex;
-  flex-direction: column;
-  height: 60vh;
-  z-index: 200;
-  width: 10%;
-  border-right: 1px solid lightgray;
-}
-.app__navs > a {
-  text-decoration: none;
-  color: white;
-  padding: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.app__navs > a:hover {
-  color: white !important;
-  opacity: 1;
-}
 
 .app__body {
   flex: 1;
@@ -89,16 +68,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .app__navs {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    border-bottom: 1px solid lightgray;
-    border-right: none;
-    height: 10vh;
-    top: 20%;
-    width: auto;
   }
   .app {
     height: 120vh;

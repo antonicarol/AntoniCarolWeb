@@ -2,10 +2,13 @@
   height: 70%;
   display: flex;
   margin-top: 30px;
+  font-family: "Grandstander";
 }
 
 .about__title > h1 {
-  color: white !important;
+  color: #968b8b !important;
+  font-family: "Grandstander";
+  padding: 10px 0px;
 }
 
 .about__left {
@@ -18,14 +21,18 @@
 }
 
 .about__center {
+  margin: 0px 20px;
   flex: 0.6;
   color: white;
 }
 
 .about__center > p {
   width: 80%;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: justify;
 }
-
 .about__contact {
   display: flex;
   flex-direction: column;
@@ -34,6 +41,7 @@
 .about__contact__item {
   display: flex;
   margin-top: 10px;
+  color: #968b8b;
 }
 .about__contact__item > p {
   margin-left: 20px;
@@ -41,12 +49,20 @@
 
 .about__right {
   flex: 0.2;
+  width: 200px;
   display: flex;
   flex-direction: column;
-  margin-right: 100px;
+  margin-right: 200px;
 }
 
 .about__right > div {
   height: 200px !important;
-  min-width: 300px !important;
+
+  min-width: 150px !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .about__right {
+    display: none;
+  }
 }

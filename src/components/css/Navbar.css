@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  z-index: 200;
+  width: 10%;
+  border-right: 1px solid lightgray;
+  font-family: "Grandstander" !important;
+}
+.navbar > a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.navbar > a:hover {
+  color: white !important;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border-bottom: 1px solid lightgray;
+    border-right: none;
+    height: 10vh;
+    top: 20%;
+    width: auto;
+  }
+}

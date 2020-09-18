@@ -1,10 +1,6 @@
 import React from "react";
 import "./css/Home.css";
-import { Link } from "react-router-dom";
-import HomeWelcome from "./HomeWelcome";
-import HomeLogin from "./HomeLogin";
-import { useStateValue } from "../../contexts/StateProvider";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import bxlTwitter from "@iconify/icons-bx/bxl-twitter";
 import linkedinIcon from "@iconify/icons-entypo-social/linkedin";
 import instagramIcon from "@iconify/icons-entypo-social/instagram";
@@ -33,8 +29,6 @@ const variantVariants = {
   },
 };
 function Home() {
-  const [{ user }, dispatch] = useStateValue();
-
   return (
     <motion.div
       variants={variantVariants}

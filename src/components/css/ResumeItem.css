@@ -1,0 +1,24 @@
+.resumeItem {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 60px;
+  font-size: 15px;
+}
+
+.resumeItem__title {
+  display: flex;
+}
+
+.resumeItem__title > p {
+  margin-left: 20px;
+}
+
+.resumeItem > span {
+  margin-left: 40px;
+  color: gray;
+}
+
+.resumeItem > p {
+  margin-left: 60px;
+  color: lightgray;
+}

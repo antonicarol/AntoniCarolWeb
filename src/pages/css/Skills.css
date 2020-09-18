@@ -48,6 +48,6 @@
 .skills__web__item > progress,
 .skills__db__item > progress {
   height: 30px;
-  background-color: blue;
+  color: #ffff !important;
   flex: 1;
 }
