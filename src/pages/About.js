@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import "./css/About.css";
 import { Avatar } from "@material-ui/core";
@@ -6,23 +6,10 @@ import MailIcon from "@material-ui/icons/Mail";
 import LocationCityIcon from "@material-ui/icons/LocationCity";
 import HouseIcon from "@material-ui/icons/House";
 import PhoneIcon from "@material-ui/icons/Phone";
-import Embed from "react-embed";
-import { useHistory, useLocation } from "react-router-dom";
 import { pageAppearFromRight } from "../animations/variants";
 import ContactItem from "../components/ContactItem";
-import { actionTypes } from "../contexts/reducer";
-import { useStateValue } from "../contexts/StateProvider";
 
 function About() {
-  const [{ path }, dispatch] = useStateValue();
-  const location = useLocation();
-
-  useEffect(() => {
-    dispatch({
-      type: actionTypes.SET_LOCATION,
-      location: location.pathname,
-    });
-  }, []);
   return (
     <motion.div
       className="about"

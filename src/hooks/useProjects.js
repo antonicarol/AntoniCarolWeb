@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import projects from "../contexts/projects";
+import React, { useState } from "react";
+import projects from "../res/projects";
 
 const useProjects = () => {
   const [data, setData] = useState(projects);

@@ -1,20 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./css/Skills.css";
 import { motion } from "framer-motion";
 import { pageAppearFromRight } from "../animations/variants";
-import { useLocation } from "react-router-dom";
-import { useStateValue } from "../contexts/StateProvider";
-import { actionTypes } from "../contexts/reducer";
-function Skills() {
-  const [{ path }, dispatch] = useStateValue();
-  const location = useLocation();
 
-  useEffect(() => {
-    dispatch({
-      type: actionTypes.SET_LOCATION,
-      location: location.pathname,
-    });
-  }, []);
+function Skills() {
   return (
     <motion.div
       key="skills"

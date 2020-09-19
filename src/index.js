@@ -3,18 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { StateProvider } from "./contexts/StateProvider";
 import { BrowserRouter as Router } from "react-router-dom";
-import reducer, { initialState } from "./contexts/reducer";
-import "semantic-ui-css/semantic.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
-      <Router>
-        <App />
-      </Router>
-    </StateProvider>
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );

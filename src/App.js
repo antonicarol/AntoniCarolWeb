@@ -10,19 +10,20 @@ import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import { AnimatePresence } from "framer-motion";
+import useLocationCustom from "./hooks/useLocationCustom";
 
 function App() {
-  const location = useLocation();
+  const location = useLocationCustom(useLocation());
   return (
     <div className="app">
       <Background />
       <div className="app__fakeHeader"></div>
       <div className="app__content">
-        <Navbar />
+        <Navbar location={location?.data} />
 
         <div className="app__body">
           <AnimatePresence>
-            <Switch location={location} key={location.key}>
+            <Switch location={location?.data} key={location.key}>
               <Route path="/about">
                 <About />
               </Route>

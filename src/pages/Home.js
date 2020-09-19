@@ -8,23 +8,10 @@ import bxlGithub from "@iconify/icons-bx/bxl-github";
 import bxlDiscord from "@iconify/icons-bx/bxl-discord";
 import bxlTwitch from "@iconify/icons-bx/bxl-twitch";
 import links from "../res/links";
-
 import { motion } from "framer-motion";
 import { pageAppearFromRight } from "../animations/variants";
-import { useStateValue } from "../contexts/StateProvider";
-import { useLocation } from "react-router-dom";
-import { actionTypes } from "../contexts/reducer";
-import { useEffect } from "react";
 
 function Home() {
-  const [{ path }, dispatch] = useStateValue();
-  const location = useLocation();
-  useEffect(() => {
-    dispatch({
-      type: actionTypes.SET_LOCATION,
-      location: location.pathname,
-    });
-  }, []);
   return (
     <motion.div
       variants={pageAppearFromRight}

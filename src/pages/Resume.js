@@ -1,23 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./css/Resume.css";
 import { motion } from "framer-motion";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 import ResumeItem from "../components/ResumeItem";
 import { pageAppearFromRight } from "../animations/variants";
-import { useLocation } from "react-router-dom";
-import { useStateValue } from "../contexts/StateProvider";
-import { actionTypes } from "../contexts/reducer";
 
 function Resume() {
-  const [{ path }, dispatch] = useStateValue();
-  const location = useLocation();
-  useEffect(() => {
-    dispatch({
-      type: actionTypes.SET_LOCATION,
-      location: location.pathname,
-    });
-  }, []);
   return (
     <motion.div
       variants={pageAppearFromRight}
