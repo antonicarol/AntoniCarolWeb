@@ -8,7 +8,7 @@
   background-image: linear-gradient(to right, #1b1e23, #232931);
   height: 100vh;
   position: relative;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -48,6 +48,7 @@
   .app {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    overflow-y: scroll;
   }
   .app::-webkit-scrollbar {
     display: none;

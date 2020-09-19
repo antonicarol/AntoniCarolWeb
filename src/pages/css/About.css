@@ -1,9 +1,11 @@
 .about {
   display: flex;
-  width: 100%;
+  flex-direction: row;
+
   margin-top: 30px;
   font-family: "Grandstander";
   justify-content: space-between;
+  border: 1px solid lightgray;
 }
 
 .about__title > h1 {
@@ -13,6 +15,10 @@
 }
 
 .about__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
   margin-left: 30px;
   margin-right: 40px;
 }
@@ -25,6 +31,7 @@
 .about__center {
   margin: 0px 20px;
   color: white;
+  flex: 1;
 }
 
 .about__center > p {

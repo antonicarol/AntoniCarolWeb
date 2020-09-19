@@ -16,13 +16,16 @@
   opacity: 0.5;
 }
 
+.link--active {
+  text-decoration: underline !important;
+  font-weight: 800;
+  opacity: 1 !important;
+  font-size: 22px !important;
+}
+
 .navbar > a:hover {
   color: white !important;
   opacity: 1;
-}
-
-.link--active {
-  color: red !important;
 }
 
 @media only screen and (max-width: 900px) {

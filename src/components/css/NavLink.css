@@ -1,0 +1,21 @@
+.navlink__a,
+.navlink__span {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.navlik__a:hover {
+  color: white !important;
+  opacity: 1;
+}
+
+.link--active {
+  text-decoration: underline !important;
+  font-weight: 800;
+  opacity: 1 !important;
+  font-size: 22px !important;
+}
