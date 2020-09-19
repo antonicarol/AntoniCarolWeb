@@ -4,18 +4,12 @@ import "./css/Projects.css";
 import { useStateValue } from "../contexts/StateProvider";
 import { actionTypes } from "../contexts/reducer";
 import ProjectCard from "../components/ProjectCard";
-import projList from "../contexts/projects";
 import { useLocation } from "react-router-dom";
+import useProjects from "../hooks/useProjects";
 function Projects() {
-  const [{ projects, path }, dispatch] = useStateValue();
+  const [{ path }, dispatch] = useStateValue();
   const location = useLocation();
-
-  useEffect(() => {
-    dispatch({
-      type: actionTypes.SET_PROJECTS,
-      projects: projList,
-    });
-  }, []);
+  const projects = useProjects();
 
   useEffect(() => {
     dispatch({
@@ -29,7 +23,7 @@ function Projects() {
   return (
     <motion.div className="projects">
       <div className="projects__wrapper">
-        {projects?.map((proj) => (
+        {projects?.data?.map((proj) => (
           <ProjectCard key={proj.title} project={proj} />
         ))}
       </div>
