@@ -1,53 +1,80 @@
 .skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__languages {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills__languagesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+.skills__languages > h2 {
+  color: gray !important;
+  padding: 10px;
+}
+
+.skills__languagesIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__languagesIcons > svg {
+  padding: 10px;
+  font-size: 32px;
+}
+
+.skills__languagesItem > .open {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 70px;
+}
+
+.skills__languagesItem > .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 70px;
+}
+
+.skills__competent > h1 {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.skills__competent__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills__competent__content__col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills__competentItem {
+  padding: 10px;
   color: white;
 }
 
-.skills > center > button {
-  font-size: 40px;
-  background-color: transparent;
-  border: none;
-}
-
-.skills__content {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px 5px;
-}
-
-.skills__basic,
-.skills__web,
-.skills__db {
-  width: 100%;
-  border: 1px solid lightgray;
-}
-
-.skills__basic__title,
-.skills__web__title,
-.skills__db__title {
-  text-align: center;
-}
-
-.skills__basic__item,
-.skills__web__item,
-.skills__db__item {
+.skills__competentItem > div {
   display: flex;
   align-items: center;
   padding: 10px;
-  margin-top: 10px;
 }
-
-.skills__basic__item > p,
-.skills__web__item > p,
-.skills__db__item > p {
-  margin: 0px 5px;
-  flex: 0.3;
-}
-
-.skills__basic__item > progress,
-.skills__web__item > progress,
-.skills__db__item > progress {
-  height: 30px;
-  color: #ffff !important;
-  flex: 1;
+.skills__competentItem > div > p {
+  color: lightgray;
+  font-size: 14px;
+  margin-left: 10px;
 }
