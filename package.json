@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconify/icons-ant-design": "^1.0.8",
     "@iconify/icons-bx": "^1.0.3",
     "@iconify/icons-entypo-social": "^1.0.5",
+    "@iconify/icons-logos": "^1.0.12",
+    "@iconify/icons-vscode-icons": "^1.0.2",
     "@iconify/react": "^1.1.3",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",

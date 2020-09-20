@@ -14,6 +14,7 @@ import useLocationCustom from "./hooks/useLocationCustom";
 
 function App() {
   const location = useLocationCustom(useLocation());
+  console.log(location);
   return (
     <div className="app">
       <Background />
@@ -23,7 +24,7 @@ function App() {
 
         <div className="app__body">
           <AnimatePresence>
-            <Switch location={location?.data} key={location.key}>
+            <Switch location={location?.data} key={location?.data?.key}>
               <Route path="/about">
                 <About />
               </Route>
