@@ -71,12 +71,12 @@ function Skills() {
               </div>
             </div>
             <div className="skills__competentItem">
-              <h3>TeamWork</h3>
+              <h3>Team Work</h3>
               <div>
                 <GroupIcon fontSize="large" />
                 <p>
-                  Discuss with the team to find the best method of co-working.
-                  Lead them into succes and be leaded to form a good team.
+                  Discuss with the team to find the best way of co-working. Lead
+                  them into success and be leaded to form a good team.
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ function Skills() {
                 <StorageIcon />
                 <p>
                   Build the Backend, integrating a database, and treat the
-                  diferent endpoint that will feed the Frontend
+                  diferent endpoints that will feed the Frontend.
                 </p>
               </div>
             </div>
@@ -109,18 +109,19 @@ function Skills() {
               <div>
                 <TrendingUpIcon />
                 <p>
-                  Use data analysis in code to find the more optimal code that
-                  will consume less memory and resources.
+                  Use data analysis through code to find the most optimal code
+                  that will consume less memory and resources.
                 </p>
               </div>
             </div>
             <div className="skills__competentItem">
-              <h3>Don't do what's already coded</h3>
+              <h3>Don't do what's already coded!</h3>
               <div>
                 <FindReplaceIcon />
                 <p>
                   Good eye for finding the best resources to code less and make
-                  profit of what someone has already coded.
+                  profit of what someone has already coded. No need to break
+                  your head!
                 </p>
               </div>
             </div>

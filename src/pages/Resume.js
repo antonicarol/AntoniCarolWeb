@@ -53,7 +53,7 @@ function Resume() {
             year="Currently working"
             location="MPM Software, Igualada-Barcelona"
             info=" Working on Assurance Software for all type of comanies. Coding
-            wiht C· and .NET framework, and SQL as database management."
+            wiht C# and .NET framework, and SQL as database management."
             Icon={WorkIcon}
           />
         </div>
