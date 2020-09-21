@@ -20,8 +20,10 @@ function About() {
     >
       <div className="about__left">
         <Avatar className="about__avatar" />
-        <h2>{"<Antoni Carol/>"}</h2>
-        <span>FullStack Developer</span>
+        <div className="about__left__info">
+          <h2>{"<Antoni Carol/>"}</h2>
+          <span>FullStack Developer</span>
+        </div>
       </div>
       <div className="about__center">
         <div className="about__title">

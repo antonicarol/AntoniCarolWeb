@@ -26,10 +26,10 @@
   margin-right: 40px;
 }
 
-.about__left > h2 {
+.about__left__info > h2 {
   margin-top: 40px;
 }
-.about__left > span {
+.about__left__info > span {
   margin-top: 20px;
   color: #968b8b;
 }
@@ -56,4 +56,33 @@
 .about__contact {
   display: flex;
   flex-direction: column;
+}
+
+@media all and (max-width: 625px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__left {
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .about__left__info {
+    margin-left: 20px;
+    display: grid;
+    place-items: center;
+  }
+  .about__center {
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+  }
+  .about__center > .about__title {
+    text-align: center;
+  }
+  .about__center > p {
+    text-align: center;
+  }
 }

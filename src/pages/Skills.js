@@ -59,71 +59,67 @@ function Skills() {
       <div className="skills__competent">
         <h1>Software World Competent Skills</h1>
         <div className="skills__competent__content">
-          <div className="skills__competent__content__col">
-            <div className="skills__competentItem">
-              <h3>Solving Problems</h3>
-              <div>
-                <BuildIcon fontSize="large" />
-                <p>
-                  Think what's to solve, how to solve it, and find the best way.
-                  Divide problems into smaller ones.
-                </p>
-              </div>
-            </div>
-            <div className="skills__competentItem">
-              <h3>Team Work</h3>
-              <div>
-                <GroupIcon fontSize="large" />
-                <p>
-                  Discuss with the team to find the best way of co-working. Lead
-                  them into success and be leaded to form a good team.
-                </p>
-              </div>
+          <div className="skills__competentItem">
+            <h3>Solving Problems</h3>
+            <div>
+              <BuildIcon fontSize="large" />
+              <p>
+                Think what's to solve, how to solve it, and find the best way.
+                Divide problems into smaller ones.
+              </p>
             </div>
           </div>
-          <div className="skills__competent__content__col">
-            <div className="skills__competentItem">
-              <h3>API Management</h3>
-              <div>
-                <StorageIcon />
-                <p>
-                  Build the Backend, integrating a database, and treat the
-                  diferent endpoints that will feed the Frontend.
-                </p>
-              </div>
-            </div>
-            <div className="skills__competentItem ">
-              <h3>Requieremts Research</h3>
-              <div>
-                <FindInPageIcon fontSize="large" />
-                <p>
-                  Find requierements, the cost and time that will be spent do be
-                  done, doing a user-centered research.
-                </p>
-              </div>
+          <div className="skills__competentItem">
+            <h3>Team Work</h3>
+            <div>
+              <GroupIcon fontSize="large" />
+              <p>
+                Discuss with the team to find the best way of co-working. Lead
+                them into success and be leaded to form a good team.
+              </p>
             </div>
           </div>
-          <div className="skills__competent__content__col">
-            <div className="skills__competentItem">
-              <h3>Data Analysis</h3>
-              <div>
-                <TrendingUpIcon />
-                <p>
-                  Use data analysis through code to find the most optimal code
-                  that will consume less memory and resources.
-                </p>
-              </div>
+
+          <div className="skills__competentItem">
+            <h3>API Management</h3>
+            <div>
+              <StorageIcon />
+              <p>
+                Build the Backend, integrating a database, and treat the
+                diferent endpoints that will feed the Frontend.
+              </p>
             </div>
-            <div className="skills__competentItem">
-              <h3>Don't do what's already coded!</h3>
-              <div>
-                <FindReplaceIcon />
-                <p>
-                  Good eye for finding the best resources to code less and make
-                  profit of what someone has already coded. No need to break
-                  your head!
-                </p>
-              </div>
+          </div>
+          <div className="skills__competentItem ">
+            <h3>Requieremts Research</h3>
+            <div>
+              <FindInPageIcon fontSize="large" />
+              <p>
+                Find requierements, the cost and time that will be spent do be
+                done, doing a user-centered research.
+              </p>
+            </div>
+          </div>
+
+          <div className="skills__competentItem">
+            <h3>Data Analysis</h3>
+            <div>
+              <TrendingUpIcon />
+              <p>
+                Use data analysis through code to find the most optimal code
+                that will consume less memory and resources.
+              </p>
+            </div>
+          </div>
+          <div className="skills__competentItem">
+            <h3>Don't do what's already coded!</h3>
+            <div>
+              <FindReplaceIcon />
+              <p>
+                Good eye for finding the best resources to code less and make
+                profit of what someone has already coded. No need to break your
+                head!
+              </p>
             </div>
           </div>
         </div>
