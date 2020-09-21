@@ -85,7 +85,9 @@
   }
   .skills__competent__content {
     display: grid;
-    place-items: center;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-auto-columns: minmax(40%, 50%);
+    grid-gap: -10px;
   }
   .skills__languagesItem {
     display: flex;
@@ -111,5 +113,30 @@
   .skills__languagesItem > .open,
   .close {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .skills__competent__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills__competentItem > div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills__competentItem > div > p {
+    color: gray;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .skills__languagesIcons > div > svg {
+    padding: 10px;
+    font-size: 20px !important;
   }
 }
