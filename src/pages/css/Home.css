@@ -42,3 +42,14 @@
   transform: scale(1.5) !important;
   opacity: 1;
 }
+
+@media all and (max-width: 625px) {
+  .home__info > h1 {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+  }
+  .home__info > p {
+    text-align: center;
+    font-size: 20px;
+  }
+}
