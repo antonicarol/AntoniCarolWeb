@@ -12,6 +12,10 @@ import consoleSqlOutlined from "@iconify/icons-ant-design/console-sql-outlined";
 import cSharp from "@iconify/icons-logos/c-sharp";
 import BuildIcon from "@material-ui/icons/Build";
 import GroupIcon from "@material-ui/icons/Group";
+import FindInPageIcon from "@material-ui/icons/FindInPage";
+import StorageIcon from "@material-ui/icons/Storage";
+import TrendingUpIcon from "@material-ui/icons/TrendingUp";
+import FindReplaceIcon from "@material-ui/icons/FindReplace";
 
 function Skills() {
   return (
@@ -59,7 +63,7 @@ function Skills() {
             <div className="skills__competentItem">
               <h3>Solving Problems</h3>
               <div>
-                <BuildIcon />
+                <BuildIcon fontSize="large" />
                 <p>
                   Think what's to solve, how to solve it, and find the best way.
                   Divide problems into smaller ones.
@@ -69,7 +73,7 @@ function Skills() {
             <div className="skills__competentItem">
               <h3>TeamWork</h3>
               <div>
-                <GroupIcon />
+                <GroupIcon fontSize="large" />
                 <p>
                   Discuss with the team to find the best method of co-working.
                   Lead them into succes and be leaded to form a good team.
@@ -79,44 +83,44 @@ function Skills() {
           </div>
           <div className="skills__competent__content__col">
             <div className="skills__competentItem">
-              <h3>Solving Problems</h3>
+              <h3>API Management</h3>
               <div>
-                <BuildIcon />
+                <StorageIcon />
                 <p>
-                  Think what's to solve, how to solve it, and find the best way.
-                  Divide problems into smaller ones.
+                  Build the Backend, integrating a database, and treat the
+                  diferent endpoint that will feed the Frontend
                 </p>
               </div>
             </div>
-            <div className="skills__competentItem">
-              <h3>TeamWork</h3>
+            <div className="skills__competentItem ">
+              <h3>Requieremts Research</h3>
               <div>
-                <GroupIcon />
+                <FindInPageIcon fontSize="large" />
                 <p>
-                  Discuss with the team to find the best method of co-working.
-                  Lead them into succes and be leaded to form a good team.
+                  Find requierements, the cost and time that will be spent do be
+                  done, doing a user-centered research.
                 </p>
               </div>
             </div>
           </div>
           <div className="skills__competent__content__col">
             <div className="skills__competentItem">
-              <h3>Solving Problems</h3>
+              <h3>Data Analysis</h3>
               <div>
-                <BuildIcon />
+                <TrendingUpIcon />
                 <p>
-                  Think what's to solve, how to solve it, and find the best way.
-                  Divide problems into smaller ones.
+                  Use data analysis in code to find the more optimal code that
+                  will consume less memory and resources.
                 </p>
               </div>
             </div>
             <div className="skills__competentItem">
-              <h3>TeamWork</h3>
+              <h3>Don't do what's already coded</h3>
               <div>
-                <GroupIcon />
+                <FindReplaceIcon />
                 <p>
-                  Discuss with the team to find the best method of co-working.
-                  Lead them into succes and be leaded to form a good team.
+                  Good eye for finding the best resources to code less and make
+                  profit of what someone has already coded.
                 </p>
               </div>
             </div>

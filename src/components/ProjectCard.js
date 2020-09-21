@@ -1,18 +1,21 @@
 import React from "react";
 import "./css/ProjectCard.css";
 import LinkIcon from "@material-ui/icons/Link";
-
+import "./css/imagehover.min.css";
 function ProjectCard({ project }) {
   return (
     <>
-      <div className="projectCard">
+      <figure
+        onClick={() => window.open(project.url)}
+        class="projectCard imghvr-flip-horiz"
+      >
         <img src={project.image} alt="" />
-        <div className="projectCard__info">
+        <figcaption>
           <h4>{project.title}</h4>
           <p>{project.category}</p>
           <LinkIcon />
-        </div>
-      </div>
+        </figcaption>
+      </figure>
     </>
   );
 }

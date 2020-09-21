@@ -1,0 +1,42 @@
+.gitFixedCorner {
+  right: 0px;
+  position: absolute;
+  top: 0px;
+
+  /* Size */
+  height: 200px;
+  width: 200px;
+
+  /* Hide the part of its children which is displayed outside */
+  overflow: hidden;
+}
+
+.gitFixedCorner > .ribbon {
+  left: -64px;
+  position: absolute;
+  top: 32px;
+
+  /* Size */
+  height: 40px;
+  width: 400px;
+
+  /* Displayed diagonally */
+  transform: rotate(45deg);
+
+  /* Background color */
+  background-color: rgba(70, 8, 99, 0.8);
+
+  display: grid;
+  place-items: center;
+  transition: transform 0.5s ease-in;
+}
+
+.ribbon > .MuiSvgIcon-root {
+  margin-top: 5px;
+  font-size: 32px;
+  color: white !important;
+}
+
+.ribbon:hover {
+  transform: scale(1.5) rotate(45deg);
+}

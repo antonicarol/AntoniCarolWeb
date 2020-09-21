@@ -4,14 +4,17 @@
 
   margin-top: 30px;
   font-family: "Grandstander";
-  justify-content: space-between;
-  border: 1px solid lightgray;
 }
 
 .about__title > h1 {
   color: #968b8b !important;
   font-family: "Grandstander";
   padding: 10px 0px;
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
 }
 
 .about__left {
@@ -23,6 +26,14 @@
   margin-right: 40px;
 }
 
+.about__left > h2 {
+  margin-top: 40px;
+}
+.about__left > span {
+  margin-top: 20px;
+  color: #968b8b;
+}
+
 .about__avatar {
   width: 100px !important;
   height: 100px !important;
@@ -32,6 +43,7 @@
   margin: 0px 20px;
   color: white;
   flex: 1;
+  margin-left: 30px;
 }
 
 .about__center > p {

@@ -9,9 +9,8 @@ export default [
     url: "https://slack-clone-3ac34.web.app/room/9g6UWBZoq8XV2AyhoPmd",
   },
   {
-    title: "MERN Whatsapp Clone",
-    category:
-      "Whatsapp Clone FullStack Clone made with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
+    title: "Whatsapp Clone",
+    category: "Whatsapp Clone FullStack Clone made with MERN STACK",
     image: whatsappClone,
     url: "https://whatsapp-clone-602bb.web.app/",
   },
@@ -44,6 +43,18 @@ export default [
     category: "Hulu Clone built with ReactJS and The Movie Datahase",
     image: "https://i.gyazo.com/337796bf007de518da9409bb568808dd.jpg",
     url: "https://hulu-clone-9fc70.web.app/",
+  },
+  {
+    title: "Covid-19 Tracker",
+    category: "Covid-19 Tracker Built with ReactJS and disease.sh API",
+    image: "https://i.gyazo.com/21579352a7eac576b534b2aba718f93a.png",
+    url: "https://covid-19-tracker-a4423.web.app/",
+  },
+  {
+    title: "Google Search Clone",
+    category: "Google Search clone Created with react and Google Search Api",
+    image: "https://i.gyazo.com/9e6a00335e55fe52b43a187088e37cbb.png",
+    url: "https://search-clone-a74bc.web.app/search",
   },
 ];
 

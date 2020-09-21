@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import { AnimatePresence } from "framer-motion";
 import useLocationCustom from "./hooks/useLocationCustom";
+import GitHubFixedCorener from "./components/GitHubFixedCorener";
 
 function App() {
   const location = useLocationCustom(useLocation());
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="app">
       <Background />
+      <GitHubFixedCorener url="https://github.com/antonicarol/AntoniCarolWeb" />
       <div className="app__fakeHeader"></div>
       <div className="app__content">
         <Navbar location={location?.data} />
