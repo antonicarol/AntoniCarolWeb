@@ -7,14 +7,14 @@ export const pageAppearFromRight = {
     transition: {
       type: "tween",
       delay: 0.8,
-      duration: 1,
+      duration: 0.6,
     },
   },
   exit: {
     x: "100vw",
     transition: {
       ease: "easeInOut",
-      duration: 1,
+      duration: 0.6,
     },
   },
 };

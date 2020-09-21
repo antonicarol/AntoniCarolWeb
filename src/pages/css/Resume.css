@@ -36,3 +36,20 @@
     width: auto;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .resume {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .resume__education,
+  .resume__work {
+    display: grid;
+    place-items: center;
+  }
+  .resume__education > h1,
+  .resume__work > h1 {
+    padding: 20px;
+  }
+}
