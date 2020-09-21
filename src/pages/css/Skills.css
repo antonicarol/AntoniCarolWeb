@@ -63,6 +63,7 @@
 .skills__competentItem {
   padding: 10px;
   color: white;
+  margin-bottom: -50px;
 }
 
 .skills__competentItem > div {
@@ -95,7 +96,6 @@
     align-items: center;
     padding: 10px 5px;
     position: relative;
-    margin-bottom: 20px;
   }
   .skills__languages > h2 {
     display: none;
@@ -138,5 +138,11 @@
   .skills__languagesIcons > div > svg {
     padding: 10px;
     font-size: 20px !important;
+  }
+
+  .skills__competentItem {
+    padding: 10px;
+    color: white;
+    margin-bottom: 0px;
   }
 }
