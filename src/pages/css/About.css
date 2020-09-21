@@ -79,10 +79,12 @@
     place-items: center;
     margin-bottom: 20px;
   }
+
   .about__center > .about__title {
     text-align: center;
   }
   .about__center > p {
     text-align: center;
+    font-size: 20px;
   }
 }
