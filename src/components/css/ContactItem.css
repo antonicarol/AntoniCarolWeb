@@ -2,6 +2,8 @@
   display: flex;
   margin-top: 10px;
   color: #968b8b;
+  text-align: center;
+  width: 300px;
 }
 .contactItem > p {
   margin-left: 20px;
