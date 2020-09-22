@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Grandstander";
-  src: url("https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap");
-}
-
 .app {
   width: auto;
   background-image: linear-gradient(to right, #1b1e23, #232931);

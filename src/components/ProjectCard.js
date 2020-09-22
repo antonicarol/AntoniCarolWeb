@@ -7,7 +7,7 @@ function ProjectCard({ project }) {
     <>
       <figure
         onClick={() => window.open(project.url)}
-        class="projectCard imghvr-flip-horiz"
+        className="projectCard imghvr-flip-horiz"
       >
         <img src={project.image} alt="" />
         <figcaption>

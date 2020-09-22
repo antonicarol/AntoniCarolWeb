@@ -4,18 +4,12 @@
   color: white;
   display: flex;
   justify-content: center;
-  font-family: "Grandstander";
   height: 150vh;
 }
 
 .resume__education,
 .resume__work {
   width: 50%;
-}
-
-.resume__education > h1,
-.resume__work > h1 {
-  font-family: "Grandstander";
 }
 
 .resume__education__content,

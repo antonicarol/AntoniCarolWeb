@@ -15,7 +15,6 @@ import GitHubFixedCorener from "./components/GitHubFixedCorener";
 
 function App() {
   const location = useLocationCustom(useLocation());
-  console.log(location);
   return (
     <div className="app">
       <Background />

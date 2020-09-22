@@ -3,12 +3,10 @@
   flex-direction: row;
 
   margin-top: 30px;
-  font-family: "Grandstander";
 }
 
 .about__title > h1 {
   color: #968b8b !important;
-  font-family: "Grandstander";
   padding: 10px 0px;
 }
 

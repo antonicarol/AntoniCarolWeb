@@ -21,7 +21,7 @@ function Home() {
       className="home"
     >
       <div className="home__info">
-        <h1>{"<Antoni Carol Mateo />"}</h1>
+        <h1>{"<Antoni Carol Mateo / >"}</h1>
         <p>
           I'm a Spanish FullStack Developer. Motivated and passionate with my
           work and with a lot of hype to show the world my skills. Confident,
